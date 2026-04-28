@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广州 · 5.1 - 5.4</title>
 
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:-apple-system;
+  background:#f3f4f6;
+  color:#333;
+}
+
+/* 封面（真实夜景） */
+.hero{
+  height:65vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.4)),
+    url('./cover.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+}
+  text-align:center;
+}
+.hero h1{font-size:34px;letter-spacing:1px;}
+.hero p{margin-top:10px;opacity:0.9;}
+
+/* 容器 */
+.container{
+  max-width:900px;
+  margin:-50px auto 40px;
+  padding:0 15px;
+}
+
+/* 卡片 */
+.card{
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:18px;
+  box-shadow:0 12px 35px rgba(0,0,0,0.08);
+  transform:translateY(40px);
+  opacity:0;
+  transition:all 0.6s ease;
+}
+.card.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+/* 文字 */
+h2{margin-bottom:10px;}
+.time{color:#ff4d6d;font-weight:bold;margin-top:10px;}
+.note{color:#666;font-size:13px;}
+.soft{color:#999;font-size:12px;}
+.tag{
+  display:inline-block;
+  background:#ff6b9a;
+  color:#fff;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+/* 结尾 */
+.footer{
+  text-align:center;
+  color:#999;
+  font-size:13px;
+  margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 封面 -->
+<div class="hero">
+  <h1>广州 · 5.1 - 5.4</h1>
+  <p>刚刚好的安排</p>
+</div>
+
+<div class="container">
+
+<!-- DAY1 -->
+<div class="card">
+<h2>📍Day1｜5.1 下午到达</h2>
+
+<p class="time">下午 抵达 → 入住（北京路/长寿路附近）</p>
+
+<p><span class="tag">👗穿搭</span></p>
+<ul>
+<li>轻便舒适为主</li>
+</ul>
+
+<p class="time">18:30 晚餐</p>
+<ul>
+<li>点都德 / 广州酒家</li>
+</ul>
+
+<p class="time">20:00 北京路走一走</p>
+<p class="soft">第一天不用安排太多，慢慢进入状态就好</p>
+
+<h3>🚇地铁</h3>
+<ul>
+<li>6号线 → 北京路站</li>
+</ul>
+</div>
+
+<!-- DAY2 -->
+<div class="card">
+<h2>📍Day2｜西关老广线</h2>
+
+<p><span class="tag">👗穿搭</span></p>
+<ul>
+<li>轻便+舒服鞋</li>
+</ul>
+
+<p class="time">08:30 早茶｜陶陶居</p>
+<ul>
+<li>虾饺 / 红米肠 / 凤爪 / 烧卖</li>
+</ul>
+
+<p class="time">11:00 上下九吃一圈</p>
+<ul>
+<li>陈添记 / 南信 / 顺记 / 宝华面店 / 林林牛杂</li>
+</ul>
+
+<p class="time">14:00 永庆坊 → 荔枝湾涌</p>
+
+<p class="time">17:30 晚餐｜泮溪酒家</p>
+
+<h3>🚇地铁</h3>
+<ul>
+<li>1号线 → 长寿路站</li>
+<li>步行覆盖全部区域</li>
+</ul>
+
+<p class="soft">今天走得多一点，慢慢来就好</p>
+</div>
+
+<!-- DAY3 -->
+<div class="card">
+<h2>📍Day3｜老城+夜晚氛围</h2>
+
+<p><span class="tag">👗穿搭</span></p>
+<ul>
+<li>浅色裙子 / 衬衫</li>
+</ul>
+
+<p class="time">09:00 早茶｜点都德</p>
+
+<p class="time">11:30 文明路吃</p>
+<ul>
+<li>民记煲仔饭 / 肠粉 / 牛杂 / 炖品</li>
+</ul>
+
+<p class="time">14:30 石室圣心大教堂</p>
+
+<p class="time">15:30 沙面岛</p>
+
+<p class="time">18:30 晚餐</p>
+<ul>
+<li>惠食佳 / 陶陶居</li>
+</ul>
+
+<p class="time">20:00 换个地方走一走</p>
+<p class="note">不远，过去会更安静一点</p>
+
+<p class="time">20:40 太古仓码头</p>
+<p class="soft">这一段会很好看</p>
+
+<h3>🚇地铁</h3>
+<ul>
+<li>6号线 → 北京路</li>
+<li>6号线 → 黄沙</li>
+<li>8号线 → 沙园</li>
+</ul>
+</div>
+
+<!-- DAY4 -->
+<div class="card">
+<h2>📍Day4｜收尾</h2>
+
+<p><span class="tag">👗穿搭</span></p>
+<ul>
+<li>白色+牛仔</li>
+</ul>
+
+<p class="time">09:30 陈家祠</p>
+
+<p class="time">12:00 炳胜品味</p>
+
+<p class="time">14:30 广东省博物馆</p>
+
+<p class="time">16:30 广州塔</p>
+
+<h3>🚇地铁</h3>
+<ul>
+<li>1号线 → 陈家祠</li>
+<li>3号线 → 珠江新城 → 广州塔</li>
+</ul>
+
+<p class="soft">如果时间刚好，可以多待一会</p>
+</div>
+
+<!-- 提醒 -->
+<div class="card">
+<h2>💡 一些小提醒</h2>
+<ul>
+<li>广州比较闷热，记得补水</li>
+<li>可以随时停下来休息</li>
+<li>不用把行程走满</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📸 关于照片</h2>
+<ul>
+<li>走路抓拍最自然</li>
+<li>傍晚光线最好看</li>
+</ul>
+</div>
+
+<div class="footer">
+<p>有些刚刚好的瞬间，会慢慢记住</p>
+</div>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+});
+cards.forEach(card=>observer.observe(card));
+</script>
+
+</body>
+</html>
